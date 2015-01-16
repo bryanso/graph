@@ -1,0 +1,69 @@
+Level 1   A       F 
+          |      /
+Level 2   B     /
+          |    / slack = 3
+Level 3   C   /
+          |  /
+Level 4   D /
+          |/
+Level 5   E 
+
+
+Level -2  A    
+          |      
+Level -1  B    
+          |    
+Level  0  C    
+          |   
+Level  1  D F
+          |/
+Level  2  E 
+
+
+Level  0  A    
+          |      
+Level  1  B    
+          |    
+Level  2  C    
+          |   
+Level  3  D F
+          |/
+Level  4  E 
+
+
+_______________________
+
+
+Level 1   A       F  
+          |      / 
+Level 2   B     G  
+          |    /
+Level 3   C   / slack = 2
+          |  /
+Level 4   D /
+          |/
+Level 5   E 
+
+
+Level -1  A       F
+          |      /
+Level  0  B     /
+          |    / slack = 2
+Level  1  C   / 
+          |  / 
+Level  2  D G
+          |/
+Level  3  E 
+
+
+Level -3  A    
+          |      
+Level -2  B    
+          |    
+Level -1  C   F 
+          |  / 
+Level  0  D G
+          |/
+Level  1  E 
+
+

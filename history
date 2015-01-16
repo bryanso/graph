@@ -1,0 +1,27 @@
+-----------------------
+Graph Fri Jan 9 07:44:37 PST 2015
+Step 1.  Ranking.
+-----------------------
+Graph Fri Jan 9 10:50:54 PST 2015
+Rewritten to use numeric nodes for convenience and performance.
+-----------------------
+Graph Fri Jan 9 10:52:00 PST 2015
+Resend
+-----------------------
+Graph Fri Jan 9 17:32:44 PST 2015
+Minor reorganization.
+-----------------------
+Graph Sun Jan 11 12:19:55 PST 2015
+Retry due to mail error
+-----------------------
+Graph Sun Jan 11 12:27:00 PST 2015
+Email rety
+-----------------------
+Graph Sun Jan 11 18:08:27 PST 2015
+Completed feasible tree.
+-----------------------
+Graph Sun Jan 11 20:16:13 PST 2015
+Bug fix in normalize_ranking
+-----------------------
+Graph Tue Jan 13 23:32:09 PST 2015
+Fix some nasty mainly typo or indirection bugs.
