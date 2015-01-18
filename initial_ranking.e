@@ -4,11 +4,6 @@ include std/search.e
 include std/math.e
 
 
-    function count(sequence x, object dummy)
-        return length(x)
-    end function
-
-
     function mark_outgoing_edges(
         sequence markers, 
         integer v, 
@@ -58,7 +53,11 @@ global function initial_ranking(object G)
     --    ...
     -- }
     --
-    sequence markers = apply(G[IN_NODES], routine_id("count"))
+    sequence markers = repeat(0, max(G[NODES]))
+    for i = 1 to G[GRAPH_SIZE] do
+        integer v = G[NODES][i]
+        markers[v] = length(G[IN_NODES][v])
+    end for
 
     --
     -- Main loop.  Continue until the markers list has no more 
@@ -87,6 +86,18 @@ global function initial_ranking(object G)
         end for
     end while
   
+    --
+    -- A the end of the above loop we have a rank_list which looks like
+    --
+    -- {
+    --     {1, 2, 3},  --- nodes belonging to top rank
+    --     {4, 5},     --- nodes belonging to the next rank
+    --     ...
+    -- }
+    --
+    -- But this assumes delta function (minimum length function) is 1
+    -- for all edges. This is not general and needs to be enhanced.  tbd
+    --
     G[RANKING] = assign_rank_to_nodes(G, rank_list)
 
     return G

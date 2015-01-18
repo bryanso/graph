@@ -34,7 +34,7 @@ global function tight_tree(object G, integer v)
             --
             -- Duplicate check and length check
             --
-            if find(v2, closed_nodes) > 0 then
+            if find(v2, closed_nodes & open_nodes) > 0 then
                 continue
             end if
           
@@ -43,13 +43,7 @@ global function tight_tree(object G, integer v)
                 -- New tight edge found
                 --
                 E = append(E, {v, v2})
-		--
-		-- Add to V only if not already there
-		-- in case of multiple sources, one sink.
-		--
-		if find(v2, V) = 0 then
-                    V = append(V, v2)
-		end if
+                V = append(V, v2)
                 open_nodes = prepend(open_nodes, v2)
             end if
         end for

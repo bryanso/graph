@@ -1,0 +1,4 @@
+Graph.pdf http://www.hamilton.ie/ollie/Downloads/Graph.pdf
+TSE93.pdf http://www.graphviz.org/Documentation/TSE93.pdf
+Hierarchical.pdf https://cs.brown.edu/~rt/gdhandbook/chapters/hierarchical.pdf
+BK http://www.inf.uni-konstanz.de/algo/publications/bk-fshca-01.pdf

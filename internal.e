@@ -141,6 +141,14 @@ global function compute_in_out_nodes(object G)
 end function
 
 
+global function rank(object G, integer v)
+--
+-- Return rank of a node, assuming RANKING has been populated.
+--
+    return G[RANKING][v]
+end function
+
+
 --
 -- Edge length.  
 -- Must compute ranking before using this.
